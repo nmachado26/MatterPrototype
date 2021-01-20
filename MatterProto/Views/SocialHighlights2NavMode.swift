@@ -126,7 +126,7 @@ struct SocialHighlights2NavMode: View {
         var width: CGFloat
         func path(in rect: CGRect) -> Path {
             var path = Path()
-            path.move(to: CGPoint(x: X_OFFSET + 5, y: yVal))
+            path.move(to: CGPoint(x: X_OFFSET, y: yVal))
             path.addLine(to: CGPoint(x: width, y: yVal))
             return path
         }
