@@ -442,59 +442,12 @@ struct SocialHighlights2Floating: View {
     
 }
 
-//struct Icon: View {
-//        var yVal: CGFloat
-//        @Binding var barOpacity: Double
-//        @Binding var isGoingDown: Bool
-//        var body: some View {
-//            GeometryReader { g -> AnyView in
-//                let rect = g.frame(in: .global)
-//                print("0 - \(rect.maxY)")
-//                DispatchQueue.main.async {
-//                    if rect.maxY < 485.75 && rect.maxY > 275.75 {
-//
-//                        var diff = abs(rect.maxY - 380.75)
-//                        var val = 1 - (diff / 90.5)
-//                        if val > 0.2 {
-//                            val = val * 2
-//                        }
-//                        self.barOpacity = Double(val)
-//
-//                    }
-//                    else {
-//                        self.barOpacity = 0
-//                    }
-//                    if rect.maxY > 485.75 {
-//                        self.isGoingDown = true
-//                    }
-//                    if rect.maxY < 275.75 {
-//                        self.isGoingDown = false
-//                    }
-//                }
-//                return AnyView(Image("facePic")
-//                                .resizable()
-//                                .scaledToFit()
-//                                .frame(width: 30, height: 30)
-//                                .clipShape(Circle())
-//                                .shadow(color: /*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/, radius: 1, x: /*@START_MENU_TOKEN@*/0.0/*@END_MENU_TOKEN@*/, y: 0.5)
-//                                .overlay(Circle().stroke(Color.white, lineWidth: 1))
-//                                .opacity(barOpacity)
-//
-//                )
-//            }
-//            .frame(height: 0)
-//            .offset(x: 360, y: yVal + 35)
-//        }
-//    }
-//
 
 struct SocialHighlights2Floating_Previews: PreviewProvider {
     static var previews: some View {
         SocialHighlights2Floating()
     }
 }
-
-
 
 //Constants
 var isGoingDown0 : Bool = true
